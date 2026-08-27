@@ -2,7 +2,7 @@
 
 **`Desenvolvedor em Aprendizado`**
 
-Me chamo Murilo Oliveira, tenho 20 anos e sou natural de São Bernardo do Campo, porém morando em Aracaju-SE. Concluí o ensino médio no CEPAF Atualmente. Estou cursando Sistemas de informação. Sou apaixonado por tecnologia.
+Me chamo Murilo Oliveira, tenho 20 anos e sou natural de São Bernardo do Campo, porém morando em Aracaju-SE. Concluí o ensino médio no CEPAF, Atualmente estou cursando Sistemas de informação na FASE. Sou apaixonado por tecnologia.
 
 
 </a>
