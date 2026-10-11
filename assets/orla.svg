@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="248" viewBox="0 0 840 248" role="img" aria-labelledby="title description">
+  <title id="title">Orla — composição original para Murilo Oliveira</title>
+  <desc id="description">Uma pequena paisagem costeira desenhada como uma interface: casas, canteiros e um mirante sobre uma base modular. Os tons de areia, verde e terracota vêm dos projetos web e do Aracaju City. Apenas as linhas da água se deslocam dois pixels, uma vez, durante 4,8 segundos, quando a preferência do sistema permite movimento.</desc>
+  <style>
+    svg {
+      --paper: #f7f4ed;
+      --frame: #c9d0c6;
+      --grid: #e4e7df;
+      --ink: #294b42;
+      --muted: #789487;
+      --ground: #e4e5d5;
+      --wall: #e8ca9d;
+      --wall-side: #d4b383;
+      --roof: #b86e54;
+      --roof-side: #914e3d;
+      --glass: #afc8b6;
+      --leaf: #668c6e;
+      --water: #c5ddcf;
+      --water-line: #47796b;
+      --panel: #ffffff;
+      --panel-detail: #a8b9aa;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --paper: #132722;
+        --frame: #40574c;
+        --grid: #20362e;
+        --ink: #d4deca;
+        --muted: #8da995;
+        --ground: #33473a;
+        --wall: #cbb387;
+        --wall-side: #a58e66;
+        --roof: #ca876a;
+        --roof-side: #a4644e;
+        --glass: #6e9784;
+        --leaf: #8aa984;
+        --water: #254d42;
+        --water-line: #8cbba5;
+        --panel: #1d362d;
+        --panel-detail: #739380;
+      }
+    }
+    .ink { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+    .detail { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .tide { transform: translateY(0); }
+    @keyframes tide {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(2px); }
+    }
+    /* Static by default; one short, quiet cycle only when motion is allowed. */
+    @media (prefers-reduced-motion: no-preference) {
+      .tide { animation: tide 4.8s ease-in-out 1; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .tide { animation: none; transform: none; }
+    }
+  </style>
+  <defs>
+    <pattern id="grid" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M28 0H0V28" fill="none" stroke="var(--grid)" stroke-width="1"/>
+    </pattern>
+    <clipPath id="panel-clip"><rect x="1" y="1" width="838" height="246" rx="18"/></clipPath>
+  </defs>
+
+  <rect x="1" y="1" width="838" height="246" rx="18" fill="var(--paper)" stroke="var(--frame)"/>
+  <g clip-path="url(#panel-clip)">
+    <rect x="38" y="29" width="764" height="190" fill="url(#grid)"/>
+    <!-- A single modular coastline: interface geometry meets the game's world. -->
+    <path d="M66 178H329L355 166H523L549 178H774V193H66Z" fill="var(--ground)"/>
+    <path d="M67 178H329L355 166H523L549 178H773" class="ink"/>
+    <path d="M68 193H286C326 193 335 186 376 186H506C547 186 556 199 599 199H774V248H68Z" fill="var(--water)"/>
+
+    <!-- Browser-shaped architectural panel, referencing the existing web projects. -->
+    <rect x="89" y="64" width="160" height="114" rx="8" fill="var(--panel)" stroke="var(--ink)" stroke-width="2"/>
+    <path d="M89 87H249" class="ink"/>
+    <path d="M104 76H108M118 76H122M132 76H136" class="detail"/>
+    <rect x="104" y="102" width="39" height="58" rx="3" fill="var(--glass)"/>
+    <path d="M155 105H229M155 119H218M155 133H203" stroke="var(--panel-detail)" stroke-width="4" stroke-linecap="round"/>
+    <rect x="155" y="147" width="46" height="13" rx="3" fill="var(--roof)"/>
+    <path d="M265 138H289V178M265 152H277" class="detail"/>
+
+    <!-- Abstract coastal houses; no borrowed artwork or project metrics. -->
+    <path d="M340 113H407V166H340Z" fill="var(--wall)"/>
+    <path d="M407 113L424 103V156L407 166Z" fill="var(--wall-side)"/>
+    <path d="M330 115L372 82L416 115Z" fill="var(--roof)"/>
+    <path d="M372 82L389 72L433 105L416 115Z" fill="var(--roof-side)"/>
+    <path d="M330 115L372 82L416 115L433 105" class="ink"/>
+    <path d="M340 115V166H407V115M407 166L424 156V112" class="ink"/>
+    <rect x="352" y="130" width="17" height="19" rx="1" fill="var(--glass)"/>
+    <path d="M378 166V130H395V166M361 130V149" class="ink"/>
+
+    <path d="M447 132H509V166H447Z" fill="var(--wall)"/>
+    <path d="M509 132L523 124V158L509 166Z" fill="var(--wall-side)"/>
+    <path d="M439 133L477 105L516 133Z" fill="var(--roof)"/>
+    <path d="M477 105L491 97L530 125L516 133Z" fill="var(--roof-side)"/>
+    <path d="M439 133L477 105L516 133L530 125M447 134V166H509V134M509 166L523 158V132" class="ink"/>
+    <rect x="458" y="144" width="14" height="13" rx="1" fill="var(--glass)"/>
+    <path d="M483 166V144H499V166" class="ink"/>
+
+    <!-- Canteiros echo the farming systems without suggesting live statistics. -->
+    <path d="M275 171H311M276 166H310M284 162V153M299 162V150" class="detail"/>
+    <path d="M284 156C275 156 276 149 276 149C283 149 284 153 284 156ZM299 153C300 145 307 145 307 145C307 152 302 153 299 153Z" fill="var(--leaf)"/>
+
+    <!-- Fixed mirante and palm: one silhouette, quiet water below. -->
+    <path d="M626 178V121M705 178V121M616 121H715M639 121V102H692V121" class="ink"/>
+    <path d="M621 100L665 87L710 100Z" fill="var(--wall)" stroke="var(--ink)" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M634 140H697M634 160H697M645 140V160M666 140V160M686 140V160" class="detail"/>
+    <path d="M584 177C586 155 585 128 577 112" stroke="var(--roof-side)" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M577 113C560 103 546 106 535 115C550 117 565 114 577 113ZM577 112C562 94 550 91 538 94C547 105 562 109 577 112ZM577 111C582 92 593 85 604 83C604 97 592 108 577 111ZM579 112C596 98 612 100 621 107C610 115 594 116 579 112Z" fill="var(--leaf)"/>
+    <path d="M728 176H754M741 176V159M741 165L735 159M741 161L749 153" class="detail"/>
+
+    <!-- All motion is confined to this one group, with a complete static frame. -->
+    <g class="tide" fill="none" stroke="var(--water-line)" stroke-width="1.7" stroke-linecap="round">
+      <path d="M92 211H190M205 211H252M284 211C322 211 339 202 377 202H491C532 202 551 216 592 216H748"/>
+      <path d="M120 226H228M350 220H427M613 229H706" opacity="0.65"/>
+    </g>
+  </g>
+</svg>

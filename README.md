@@ -4,20 +4,23 @@
 
 [LinkedIn](https://www.linkedin.com/in/murilo-oliveira-0ab8b0368/) · [Projetos](#projetos) · [Estudos em C e Python](#estudos-em-c-e-python)
 
+![Composição original de uma orla com arquitetura, canteiros e janelas de interface, inspirada nos meus projetos web e no Aracaju City.](assets/orla.svg)
+
 Sou estudante de Sistemas de Informação na **Estácio** e desenvolvo minha experiência criando sites e sistemas para pequenos negócios. Meu foco é transformar necessidades do negócio em interfaces claras e funcionalidades úteis.
 
 Busco uma oportunidade de **estágio em desenvolvimento** para aprender com uma equipe, aprofundar minha base técnica e contribuir com projetos reais.
 
 ## Tecnologias e competências
 
-Tecnologias que apliquei nos projetos web:
+Tecnologias que apliquei nos projetos web e no desenvolvimento do Aracaju City:
 
 | Área | Tecnologias e práticas |
 | --- | --- |
 | Interfaces web | HTML5, CSS, JavaScript, TypeScript e design responsivo |
 | Backend e dados | PHP, MySQL, SQL e APIs REST |
 | Animações e ferramentas | GSAP, ScrollTrigger, ScrollSmoother, SplitText e Vite |
-| Ambiente e validação | Docker, testes funcionais e testes de concorrência |
+| Ambiente e validação | Docker, testes funcionais, testes de concorrência e testes EditMode com NUnit |
+| Desenvolvimento de jogos | Unity, C#, jogos 2D, UI Toolkit e persistência JSON — Aracaju City |
 | Construção de produtos | Análise de requisitos, prototipagem, design de interfaces e regras de negócio |
 
 Também estudo **C, Python e lógica de programação** nos meus repositórios acadêmicos.
@@ -65,4 +68,5 @@ Repositórios que registram minha prática e evolução na programação:
 Vamos conversar sobre estágio, desenvolvimento web e aprendizado em tecnologia:
 
 [**Meu LinkedIn**](https://www.linkedin.com/in/murilo-oliveira-0ab8b0368/)
+
 
